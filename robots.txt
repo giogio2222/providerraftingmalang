@@ -1,0 +1,18 @@
+# Robots.txt untuk https://providerraftingmalang.vercel.app/
+# Dioptimalkan untuk Googlebot dan crawler umum
+
+User-agent: *
+Allow: /
+
+# Mencegah crawling pada folder sistem atau API (jika ada di masa depan)
+Disallow: /api/
+Disallow: /private/
+Disallow: /tmp/
+Disallow: /draft/
+
+# Memastikan Google Images bisa mengindeks gambar rafting
+Allow: /img/
+Allow: /assets/
+
+# Sitemap Location (Sangat Penting untuk SEO)
+Sitemap: https://providerraftingmalang.vercel.app/sitemap.xml
